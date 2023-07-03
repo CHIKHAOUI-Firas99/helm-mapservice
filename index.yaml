@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  back2:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-07-03T13:18:17.382089975Z"
+    description: A Helm chart for Kubernetes
+    digest: c372db0c61b6edbd86c175f7fcfa0a12cea4b69c5024c2f1ca61635d6c157bfd
+    name: back2
+    type: application
+    urls:
+    - https://github.com/CHIKHAOUI-Firas99/helm-mapservice.io/helm-mapservice/back2-0.1.0.tgz/back2-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-07-03T13:18:17.38115827Z"

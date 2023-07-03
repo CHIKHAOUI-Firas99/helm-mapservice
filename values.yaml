@@ -1,0 +1,23 @@
+######################################## Application ########################################################
+
+appName: mapservice-helm
+namespace: helm-test
+
+######################################### configmap #########################################################
+
+configmap:
+  name: fastapi2-helm-config
+                                  ######### mysql ###########   
+  analyseNotificationServiceUrl: http://10.96.227.86:31853                                                            
+  mysql:
+    user: root
+    ip: mysql-istio.app-istio
+    port: 3306
+    password: 1234
+    dbname: mapdb
+
+########################################## Image ############################################################
+
+image:
+  repository: firaschikhaoui/usermanagment
+  tag: v1

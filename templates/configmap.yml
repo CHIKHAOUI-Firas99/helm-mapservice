@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.configmap.name }}
+  namespace: {{ .Values.namespace }}
+data:
+  config.json: |
+        {
+        "database": {
+        "__comment": "mycomment",
+        "user": "{{ .Values.configmap.mysql.user }}",
+        "password": "{{ .Values.configmap.mysql.password }}",
+        "ip": "{{ .Values.configmap.mysql.ip }}",
+        "port": "{{ .Values.configmap.mysql.port }}",
+        "dbname": "{{ .Values.configmap.mysql.dbname }}"
+        },
+        "app": {
+        "host": "0.0.0.0",
+        "port": "8000"
+        },
+        "analyseNotificationServiceUrl": "{{ .Values.configmap.analyseNotificationServiceUrl }}"
+        }
+
+

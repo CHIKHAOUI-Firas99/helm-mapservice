@@ -9,6 +9,6 @@ entries:
     name: back2
     type: application
     urls:
-    - https://github.com/CHIKHAOUI-Firas99/helm-mapservice.io/helm-mapservice/back2-0.1.0.tgz/back2-0.1.0.tgz
+    -  https://chikhaoui-firas99.github.io/helm-mapservice/back2-0.1.0.tgz
     version: 0.1.0
 generated: "2023-07-03T13:18:17.38115827Z"

@@ -1,14 +1,14 @@
 ######################################## Application ########################################################
 
 appName: mapservice-helm
-namespace: helm-test
+namespace: app-istio
 
 ######################################### configmap #########################################################
 
 configmap:
   name: fastapi2-helm-config
                                   ######### mysql ###########   
-  analyseNotificationServiceUrl: http://10.96.227.86:31853                                                            
+  analyseNotificationServiceUrl: notifications-helm.app-istio                                                            
   mysql:
     user: root
     ip: mysql-istio.app-istio
@@ -19,5 +19,5 @@ configmap:
 ########################################## Image ############################################################
 
 image:
-  repository: firaschikhaoui/usermanagment
+  repository: firaschikhaoui/mapservice
   tag: v1
